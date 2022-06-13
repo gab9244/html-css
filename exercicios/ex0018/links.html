@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  
+           Seletores personalizadas
+           #  = id
+           .  = class
+           :  = pseudo-class
+           :: = pseudo-element
+           >  = children
+        
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: magenta;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(255, 153, 0);
+        }
+        .clicado:active {
+            color: red;
+            text-decoration: underline;
+            font-size: 100px;
+        }
+        .clicado {
+            font-style: bold;
+
+        }
+        /* o text-decoration:none; tira qualquer configuraçâo visual que um link tem, como a linha que fica embaixo deles, já o :active muda o estilo quando se clica no elemento/classe espesificado*/
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <a href="https://dictionary.cambridge.org/pt/">
+            <li>Cambridge Dicitionary</li>
+        </a>
+        <a href="https://www.youtube.com/channel/UC4aiJNDUviw_vMhdCq5Kq1Q">
+            <li>Canal do casimiro</li>
+        </a>
+        <a href="https://www.cursoemvideo.com/">
+            <li>Site do curso em vídeo</li>
+        </a>
+    </ul>
+    <p>O :active é uma pseudo classe que faz com que algo visual aconteça quando o elemento/ classe for <span class="clicado">clicado</span></p>
+    
+    
+</body>
+</html>

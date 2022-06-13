@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>vou tentar abrir esse site em vários dispositivos diferentes e aumenta e diminuir o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel de tamanho g "> 
+    </picture>
+    
+
+        <h1>Reproduzindo Áudio</h1>
+        <p>Reproduzindo audios no HTML5.</p>
+        <audio src="midia/guanacast-33.mp3"  controls autoplay></audio>
+        <!--Existem varios tipos de audio por exemplo MP3 WAV OGG-->
+    
+        <h2>outras formas de colocar Áudio</h2>
+        <audio preload="metadata" autoplay controls>
+            <source src="midia/Smoke Jacket Blues - TrackTribe.mp3" type="audio/mpeg" >
+            <source src="midia/Smoke Jacket Blues - TrackTribe.ogg" type="audio/ogg">
+            <source src="midia/Smoke Jacket Blues - TrackTribe.wav" type="audio/wav">
+        </audio>
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">clique aqui para baixar o arquivo</a></p>
+</body>
+</html>

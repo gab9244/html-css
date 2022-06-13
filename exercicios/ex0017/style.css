@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(218, 247, 218);
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+#depoisdoclass {
+    color: white;
+}
+.antesdoid {
+ color: red;
+}

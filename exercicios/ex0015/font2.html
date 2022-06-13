@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando fontes externas baixadas </title>
+    <style>
+        @font-face {
+            font-family: old;
+            src: url('fontes/CloisterBlack.ttf') format('truetype');
+            
+            
+        }
+        body {
+            font-family: old, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'old', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como usar fontes externas baixadas</h1>
+    <p>Para usar fontes baixadas externamente é preciso depois de baixa(s) usar um seletor especial chamado de @font-face, depois disso é necessário indicar com a propriedade font-family o nome que você vai dar para a fonte baixada. <br>
+    Já no src é só indica onde estar a fonte baixada.</p> 
+    <!--É importante se  lembrar que quando for colocar essa fonte baixada em lugares como h1 ou body, só ira funcionar se no font-family for colocado o nome que estar no @font-face.-->
+    <p>Da para perceber que lá no src há uma propriedade chamada de format, é nela que será especificada o formanto da fonte baixada.</p>
+    <h2>Formados de fontes</h2>
+    <p>Há varios formatos de fontes alguns deles são:</p>
+    <ul>
+        <li>opentype(otf)</li>
+        <li>truetype(ttf)</li>
+        <li>embedded-opentype</li>
+        <li>truetype-aat (Apple Advanced Typography)</li>
+        <li>svg</li>
+    </ul>
+    
+</body>
+</html>
